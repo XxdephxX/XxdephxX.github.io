@@ -3,8 +3,9 @@
 <style>
 @import url('https://fonts.googleapis.com/css?family=Amaranth');
 
-	.set-text-blue-BK{
-		color: blue;
+	.set-text-BK{
+		color: #8ED79F;
+		text-shadow: 2px 2px grey;
 	}
 	.set-text-amaranth{
 		font-family: 'Amaranth', sans-serif;
@@ -12,29 +13,73 @@
 	.text-46{
 		font-size: 46px;
 	}
+	.text-30{
+		font-size: 30px;
+	}
 	.headline-top-photo{
 		background-image: url(http://imageshack.com/a/img923/5956/Wxr9eg.jpg);
 		background-size: cover;
-		height: 320;
-		padding-left: 10;
-		padding-right: 10;
-		padding-bottom: 10;
+		height: 200px;
+		padding-left: 10px;
+		padding-right: 10px;
+		padding-bottom: 10px;
+		margin-top: -20px;
 	}
 	.body-composition{
 		background-color: black;
 		height: 100%;
 	}
-
+	.padtop{
+		padding-top: 10px;
+	}
+	h2{
+		position: relative;
+		bottom: 25px;
+	}
+	#board{
+			margin: 0 auto;
+			display: block;
+			height: 640px;
+			width: 320px;
+			border: 2px solid black;
+			background: black;
+		}
 </style>
 
-
 <div class='headline-top-photo'>
-	<h1 class="set-text-amaranth set-text-blue-BK text-46">Ben Kaiser</h1>
-		<h2 style="margin-top: -30" class="set-text-amaranth">
-			email: <a href="mailto: benmkaiser@gmail.com">benmkaiser@gmail.com</a></h2>
+	<h1 class="set-text-amaranth set-text-BK text-46 padtop">Ben Kaiser</h1>
+		<h2 class="set-text-amaranth text-30">
+			<a href="mailto: benmkaiser@gmail.com">benmkaiser@gmail.com</a></h2>
 </div>
 
-<div class="body-composition">
+<div>
+
+	<body>
+		<canvas id="board"></canvas>
+		<script src="tetris.js"></script>
+		<script src="pieces.js"></script>
+		<script src="bulkImageLoader.js"></script>
+	</body>
 
 </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </html>
